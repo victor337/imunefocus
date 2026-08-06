@@ -7,8 +7,8 @@
 // ==========================================================
 const siteConfig = {
   companyName: 'IMUNEFOCUS',
-  whatsappNumber: '55SEUNUMERO',
-  phoneDisplay: '(00) 00000-0000',
+  whatsappNumber: '5511977738720',
+  phoneDisplay: '(11) 97773-8720',
   email: 'contato@imunefocus.com.br',
   city: 'Cidade e região',
   businessHours: 'Segunda a sábado, das 8h às 18h (A CONFIRMAR)',
@@ -18,40 +18,32 @@ const siteConfig = {
 
 // EDITE AQUI: lista de serviços. Adicione ou remova objetos livremente.
 const services = [
-  { title:'Dedetização residencial', category:'Pragas', description:'Tratamento planejado para casas e apartamentos.', icon:'⌂' },
-  { title:'Dedetização comercial', category:'Pragas', description:'Proteção para comércios e ambientes corporativos.', icon:'▥' },
-  { title:'Dedetização em condomínios', category:'Pragas', description:'Cuidado de áreas comuns e pontos críticos.', icon:'▦' },
-  { title:'Controle de baratas', category:'Pragas', description:'Inspeção, tratamento e orientação preventiva.', icon:'◎' },
-  { title:'Controle de formigas', category:'Pragas', description:'Soluções de acordo com a espécie e o ambiente.', icon:'⌁' },
-  { title:'Controle de aranhas e escorpiões', category:'Pragas', description:'Manejo técnico e redução de fatores de abrigo.', icon:'✣' },
-  { title:'Controle de pulgas e carrapatos', category:'Pragas', description:'Tratamento direcionado do ambiente.', icon:'◌' },
-  { title:'Controle de traças', category:'Pragas', description:'Proteção para armários, tecidos e documentos.', icon:'◇' },
-  { title:'Controle de mosquitos e moscas', category:'Pragas', description:'Ações corretivas e medidas de prevenção.', icon:'⌁' },
-  { title:'Descupinização', category:'Pragas', description:'Controle de cupins e brocas de madeira.', icon:'▤' },
-  { title:'Desratização', category:'Roedores', description:'Controle profissional de ratos, ratazanas e camundongos.', icon:'◉' },
-  { title:'Inspeção de acessos', category:'Roedores', description:'Identificação de abrigos, rotas e pontos de entrada.', icon:'⌖' },
-  { title:'Monitoramento de roedores', category:'Roedores', description:'Instalação e acompanhamento de pontos estratégicos.', icon:'◫' },
-  { title:'Desentupimento de pias', category:'Desentupimento', description:'Desobstrução cuidadosa de pias e sifões.', icon:'≈' },
-  { title:'Vasos sanitários e ralos', category:'Desentupimento', description:'Atendimento para obstruções sanitárias.', icon:'◍' },
-  { title:'Tubulações e esgoto', category:'Desentupimento', description:'Diagnóstico e desobstrução de redes.', icon:'↝' },
-  { title:'Caixas de gordura', category:'Desentupimento', description:'Desentupimento, limpeza e manutenção preventiva.', icon:'▧' },
-  { title:'Limpeza de tubulações', category:'Desentupimento', description:'Limpeza preventiva conforme avaliação.', icon:'⌇' },
-  { title:'Sanitização de ambientes', category:'Higienização', description:'Tratamento técnico de superfícies e espaços.', icon:'✦' },
-  { title:'Desinfecção de ambientes', category:'Higienização', description:'Procedimento adequado à necessidade do local.', icon:'✚' },
-  { title:'Higienização de áreas comuns', category:'Higienização', description:'Cuidado para condomínios e espaços compartilhados.', icon:'◫' },
-  { title:'Limpeza técnica', category:'Higienização', description:'Limpeza direcionada para situações específicas.', icon:'✧' },
-  { title:'Manejo integrado de pragas', category:'Prevenção', description:'Estratégia contínua de inspeção, controle e prevenção.', icon:'◈' },
-  { title:'Inspeção técnica', category:'Prevenção', description:'Avaliação dos riscos e recomendação da melhor conduta.', icon:'⌕' },
-  { title:'Monitoramento periódico', category:'Prevenção', description:'Acompanhamento preventivo para empresas e condomínios.', icon:'↻' },
-  { title:'Atendimento emergencial', category:'Prevenção', description:'Disponibilidade sujeita à região e agenda.', icon:'⚡' },
-  { title:'Planos empresariais', category:'Prevenção', description:'Rotinas personalizadas para negócios e condomínios.', icon:'▦' }
+  { title:'Dedetização', category:'Controle de pragas', description:'Controle de baratas, formigas, aranhas, escorpiões, pulgas e carrapatos com produtos regulamentados e técnicas seguras.', icon:'◈' },
+  { title:'Controle de baratas', category:'Controle de pragas', description:'Inspeção, tratamento dos pontos críticos e orientação preventiva.', icon:'◎' },
+  { title:'Controle de formigas', category:'Controle de pragas', description:'Solução adequada à espécie, ao foco e às características do ambiente.', icon:'⌁' },
+  { title:'Aranhas e escorpiões', category:'Controle de pragas', description:'Manejo técnico com atenção a abrigos, acessos e fatores de risco.', icon:'✣' },
+  { title:'Pulgas e carrapatos', category:'Controle de pragas', description:'Tratamento direcionado do ambiente e orientação para prevenir novos focos.', icon:'◌' },
+  { title:'Desratização', category:'Roedores', description:'Inspeção, monitoramento e métodos eficazes contra ratos, camundongos e ratazanas.', icon:'◉' },
+  { title:'Ratos de telhado', category:'Roedores', description:'Controle direcionado a roedores que acessam forros, telhados e áreas elevadas.', icon:'⌂' },
+  { title:'Camundongos', category:'Roedores', description:'Identificação de acessos e controle de pequenos roedores em áreas internas.', icon:'⌕' },
+  { title:'Ratazanas', category:'Roedores', description:'Controle de focos associados a esgoto, terrenos e áreas externas.', icon:'◍' },
+  { title:'Descupinização', category:'Cupins', description:'Combate a cupins para proteger móveis, portas, telhados e estruturas.', icon:'▤' },
+  { title:'Cupim de madeira seca', category:'Cupins', description:'Tratamento de peças, móveis, batentes e outros elementos de madeira.', icon:'◇' },
+  { title:'Cupim subterrâneo', category:'Cupins', description:'Avaliação de colônias e caminhos que podem atingir estruturas e edificações.', icon:'⌇' },
+  { title:'Limpeza de caixa d’água', category:'Limpeza e higiene', description:'Higienização completa para remover impurezas, resíduos e microrganismos.', icon:'◒' },
+  { title:'Frequência e processo', category:'Limpeza e higiene', description:'A periodicidade e as etapas são orientadas conforme o reservatório, uso e condições encontradas.', icon:'↻' },
+  { title:'Certificado de limpeza', category:'Limpeza e higiene', description:'Consulte as condições para emissão do comprovante referente ao serviço executado.', icon:'▧' },
+  { title:'Limpeza de forros', category:'Limpeza e higiene', description:'Remoção de fezes, ninhos, resíduos e sujeiras deixadas por pragas em forros e entre-forros.', icon:'⌂' },
+  { title:'Sanitização de ambientes', category:'Limpeza e higiene', description:'Redução da carga de microrganismos para melhores condições de higiene.', icon:'✦' },
+  { title:'Controle de pombos', category:'Serviços especiais', description:'Soluções seguras para afastar pombos de telhados, fachadas e outras áreas.', icon:'⌁' },
+  { title:'Desentupimento', category:'Serviços especiais', description:'Pias, ralos, vasos, esgoto, caixas de gordura, colunas e tubulações. Serviço fechado, sem cobrança por metro.', icon:'≈' }
 ];
 
 // EDITE AQUI: estatísticas. Estes textos são exemplos, não dados comprovados.
 const statistics = [
-  { value: 500, suffix: '+', label: 'atendimentos — exemplo' },
-  { value: 4, suffix: '', label: 'frentes de serviço' },
-  { value: 1, suffix: '', label: 'canal direto de suporte' }
+  { value: 30, suffix: '+', label: 'anos de tradição familiar' },
+  { value: 9, suffix: '', label: 'anos na Grande São Paulo' },
+  { value: 4, suffix: '', label: 'segmentos atendidos' }
 ];
 
 // EDITE AQUI: depoimentos ilustrativos. Substitua por avaliações reais autorizadas.
@@ -77,10 +69,10 @@ const faqs = [
 ];
 
 const featured = [
-  ['Dedetização','Controle direcionado de pragas urbanas em ambientes residenciais e empresariais.','◈'],
-  ['Desentupimento','Desobstrução de pias, ralos, tubulações, esgoto e caixas de gordura.','≈'],
-  ['Controle de roedores','Inspeção, controle e monitoramento de ratos, ratazanas e camundongos.','◉'],
-  ['Sanitização','Higienização e tratamento preventivo para ambientes mais protegidos.','✦']
+  ['Dedetização','Eliminamos e controlamos baratas, formigas, aranhas, pulgas, carrapatos e escorpiões com técnicas seguras.','◈'],
+  ['Desratização','Controle de ratos de telhado, camundongos e ratazanas por meio de inspeção e monitoramento.','◉'],
+  ['Descupinização','Combate a cupins de madeira seca e subterrâneos para proteger móveis e estruturas.','▤'],
+  ['Desentupimento','Pias, ralos, vasos, esgoto, caixas de gordura, colunas e tubulações — sem cobrança por metro.','≈']
 ];
 const differences = [['⚡','Atendimento rápido'],['♙','Equipe capacitada'],['◈','Produtos profissionais'],['✓','Segurança na aplicação'],['◉','Orçamento facilitado'],['⌂','Residencial e empresarial'],['✦','Soluções personalizadas'],['◌','Suporte pelo WhatsApp'],['♧','Compromisso ambiental'],['↗','Orientação pós-serviço']];
 const audiences = [['⌂','Casas'],['▤','Apartamentos'],['▦','Condomínios'],['♨','Restaurantes'],['▥','Mercados'],['▣','Escritórios'],['▱','Lojas'],['▰','Galpões'],['⚙','Indústrias'],['✚','Clínicas'],['▧','Escolas'],['◫','Comércios']];
@@ -111,7 +103,7 @@ function applyConfig() {
 }
 
 function renderContent() {
-  $('#featured-services').innerHTML = featured.map((item,i) => `<article class="feature-card reveal ${i===0?'featured':''}"><span class="card-icon" aria-hidden="true">${item[2]}</span><h3>${item[0]}</h3><p>${item[1]}</p><a class="card-link" href="#" data-whatsapp data-message="Olá, gostaria de um orçamento para ${item[0]}.">Solicitar orçamento →</a></article>`).join('');
+  $('#featured-services').innerHTML = featured.map((item,i) => `<article class="feature-card reveal ${i===0?'featured':''}"><span class="card-icon" aria-hidden="true">${item[2]}</span><h3>${item[0]}</h3><p>${item[1]}</p>${item[0]==='Desentupimento'?'<a class="card-link" href="desentupimento.html">Conhecer o serviço →</a>':`<a class="card-link" href="#" data-whatsapp data-message="Olá, gostaria de um orçamento para ${item[0]}.">Solicitar orçamento →</a>`}</article>`).join('');
   $('#differences-grid').innerHTML = differences.map(i => `<div class="difference-item"><span aria-hidden="true">${i[0]}</span><strong>${i[1]}</strong></div>`).join('');
   $('#audience-grid').innerHTML = audiences.map(i => `<div class="audience-item"><span aria-hidden="true">${i[0]}</span>${i[1]}</div>`).join('');
   $('#stats').innerHTML = statistics.map(s => `<div class="stat"><strong data-count="${s.value}">0</strong><b>${s.suffix}</b><span>${s.label}</span></div>`).join('');
@@ -174,4 +166,3 @@ setupFaq();
 setupCarousel();
 setupAnimations();
 setupForm();
-

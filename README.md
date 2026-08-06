@@ -16,8 +16,10 @@ Depois acesse `http://localhost:8000`.
 
 ```text
 index.html                 conteúdo e estrutura da página
+desentupimento.html        página exclusiva e otimizada para desentupimento
 css/style.css              identidade visual e responsividade
 js/script.js               configurações, conteúdo dinâmico e interações
+js/desentupimento.js       configurações e interações da página de desentupimento
 assets/images/             imagens do site
 assets/icons/              favicon e ícones locais
 ```
@@ -25,6 +27,8 @@ assets/icons/              favicon e ícones locais
 ## Personalização essencial
 
 No início de `js/script.js`, altere o objeto `siteConfig`. Troque especialmente `whatsappNumber` por país + DDD + número, apenas com algarismos (exemplo: `5511999999999`). No mesmo bloco ficam telefone visível, e-mail, cidade, horário e redes sociais.
+
+Repita o telefone, WhatsApp, e-mail e cidade em `pageConfig`, no início de `js/desentupimento.js`, para manter a página exclusiva de desentupimento sincronizada.
 
 Os serviços, estatísticas, depoimentos e perguntas frequentes também estão no início de `js/script.js`, em listas claramente comentadas. Para adicionar um serviço, copie um objeto de `services`, altere os campos e mantenha uma das categorias existentes — ou crie uma nova categoria, que ganhará um filtro automaticamente.
 
@@ -72,5 +76,4 @@ Compre o domínio em um registrador, adicione-o no painel do GitHub Pages, Netli
 
 ## Formulário
 
-O formulário valida os campos no navegador, cria uma mensagem organizada e abre o WhatsApp. Ele não armazena dados e não possui backend. Enquanto `whatsappNumber` for o placeholder `55SEUNUMERO`, a validação funciona, mas nenhuma conversa é aberta.
-
+O formulário valida os campos no navegador, cria uma mensagem organizada e abre o WhatsApp. Ele não armazena dados e não possui backend. Enquanto `whatsappNumber` for o placeholder `5511977738720`, a validação funciona, mas nenhuma conversa é aberta.
